@@ -1,5 +1,26 @@
 
 
+### 1. RunnableSequence
+
+RunnableSequence is a sequential chain of runnables in LangChain that executes each step one after another, passing the output of one step as the input to the next.
+It is useful when you need to compose multiple runnables together in a structured workflow.
+
+
+### 2. RunnableParallel
+
+RunnableParallel is a runnable primitive that allows multiple runnables to execute in parallel.
+Each runnable receives the same input and processes it independently, producing a dictionary of outputs.
+
+### 3. RunnablePassthrough
+
+RunnablePassthrough is a special Runnable primitive that simply returns the input as output
+without modifying it.
+
+### 4. RunnableLambda
+
+RunnableLambda is a runnable primitive that allows you to apply custom Python functions within an Al pipeline.
+It acts as a middleware between different Al components, enabling preprocessing, transformation, API calls, filtering, and post-processing in a LangChain workflow.
+
 
 ### 5. RunnableBranch
 
